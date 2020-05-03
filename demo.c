@@ -72,68 +72,6 @@ int main(int argc, char **argv){
   }
 if(_DEBUG_)printf("base=%s\n",base);
 
-  // You can change font file
-  // 32Dot Gothic
-  char G32[2][128];
-  strcpy(G32[0],base);
-  strcpy(G32[1],base);
-  strcat(G32[0],"fontx/ILGH32XB.FNT");
-  strcat(G32[1],"fontx/ILGZ32XB.FNT");
-  FontxFile fx32G[2];
-  Fontx_init(fx32G,G32[0],G32[1]);
-
-  // 32Dot Mincho
-  char M32[2][128];
-  strcpy(M32[0],base);
-  strcpy(M32[1],base);
-  strcat(M32[0],"fontx/ILMH32XF.FNT");
-  strcat(M32[1],"fontx/ILMZ32XF.FNT");
-  FontxFile fx32M[2];
-  Fontx_init(fx32M,M32[0],M32[1]);
-
-  // 24Dot Gothic
-  char G24[2][128];
-  strcpy(G24[0],base);
-  strcpy(G24[1],base);
-  strcat(G24[0],"fontx/ILGH24XB.FNT");
-  strcat(G24[1],"fontx/ILGZ24XB.FNT");
-  FontxFile fx24G[2];
-  Fontx_init(fx24G,G24[0],G24[1]);
-
-  // 24Dot Mincho
-  char M24[2][128];
-  strcpy(M24[0],base);
-  strcpy(M24[1],base);
-  strcat(M24[0],"fontx/ILMH24XF.FNT");
-  strcat(M24[1],"fontx/ILMZ24XF.FNT");
-  FontxFile fx24M[2];
-  Fontx_init(fx24M,M24[0],M24[1]);
-
-  // 16Dot Gothic
-  char G16[2][128];
-  strcpy(G16[0],base);
-  strcpy(G16[1],base);
-  strcat(G16[0],"fontx/ILGH16XB.FNT");
-  strcat(G16[1],"fontx/ILGZ16XB.FNT");
-  FontxFile fx16G[2];
-  Fontx_init(fx16G,G16[0],G16[1]);
-
-  // 16Dot Mincho
-  char M16[2][128];
-  strcpy(M16[0],base);
-  strcpy(M16[1],base);
-  strcat(M16[0],"fontx/ILMH16XB.FNT");
-  strcat(M16[1],"fontx/ILMZ16XB.FNT");
-  FontxFile fx16M[2];
-  Fontx_init(fx16M,M16[0],M16[1]);
-
-#if 0
-  Fontx_dump(fx32G);
-  Fontx_dump(fx24G);
-  Fontx_dump(fx32M);
-  Fontx_dump(fx24M);
-#endif
-
   char ppath[128];
   strcpy(ppath,base);
   strcat(ppath,"pin.conf");
